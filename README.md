@@ -1,3 +1,1 @@
-# Tailwind CSS
-
-- PostCSS Language Support enabled
+# Tailwind CSS | Frontend Mentor - Fylo landing page with two column layout

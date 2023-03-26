@@ -4,10 +4,222 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello</h1>
+    <header>
+      <div
+        class="mt-5 flex items-center justify-between px-20 pt-6 pb-5 wp:px-10"
+      >
+        <div>
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <div>
+          <ul class="flex gap-7 text-xl font-light wp:hidden">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div
+          class="flex items-center gap-20 px-20 pt-16 wp:flex-col-reverse wp:px-10"
+        >
+          <div class="max-w-2xl">
+            <h1 class="text-5xl font-medium">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class="pt-8 pb-8 text-xl font-normal">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+                class="mr-6 w-3/5 rounded border-2 border-gray-700 border-opacity-75 px-5 py-4 text-xl focus:outline-none wp:w-full"
+              />
+              <button
+                class="mt-5 rounded bg-sky-500 px-12 py-4 text-xl text-white hover:bg-sky-400"
+              >
+                Get Started
+              </button>
+            </form>
+          </div>
+          <div>
+            <img src="./images/illustration-1.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mt-32">
+          <div>
+            <img
+              src="./images/bg-curve-desktop.svg"
+              alt="bg-curve-desktop"
+              class="w-screen"
+            />
+          </div>
+          <div
+            class="flex gap-6 gap-x-14 bg-curve-clr px-20 pt-10 pb-24 wp:flex-col-reverse wp:px-10"
+          >
+            <div clas>
+              <div class="max-w-4xl">
+                <div>
+                  <h1 class="text-5xl font-medium">
+                    Stay productive, wherever you are
+                  </h1>
+                  <p class="pt-8 text-xl font-normal">
+                    Never let location be an issue when accessing your files.
+                    Fylo has you covered for all of your file storage needs.
+                  </p>
+                  <p class="pt-8 pb-8 text-xl font-normal">
+                    Securely share files and folders with friends, family and
+                    colleagues for live collaboration. No email attachments
+                    required!
+                  </p>
+                  <a
+                    href="#"
+                    class="flex w-max items-center gap-2 border-b-2 border-b-teal-400 text-lg text-teal-400"
+                    >See how Fylo works
+                    <img
+                      src="./images/icon-arrow.svg"
+                      alt="arrow"
+                      class="h-6 w-6"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="mt-8 max-w-sm rounded bg-white p-7 shadow-lg">
+                <img src="./images/icon-quotes.svg" alt="icon-quotes" />
+                <p>
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+                <div class="mt-4 flex items-center gap-5">
+                  <img
+                    src="./images/avatar-testimonial.jpg"
+                    alt="avatar"
+                    class="h-10 w-10 rounded-full"
+                  />
+                  <div class="flex flex-col">
+                    <span class="font-medium">Kyle Burton</span>
+                    <span class="text-sm text-slate-500"
+                      >Founder & CEO, Huddle</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="./images/illustration-2.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="flex justify-between gap-6 bg-cta-clr px-20 py-16 wp:flex-col wp:px-10"
+        >
+          <div class="max-w-lg">
+            <h2 class="text-4xl font-medium text-gray-100">
+              Get early access today
+            </h2>
+            <p class="pt-8 text-xl font-normal text-gray-100">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+                class="mr-6 w-full rounded border-2 border-gray-700 border-opacity-75 px-5 py-4 text-lg focus:outline-none"
+              />
+              <button
+                class="mt-5 rounded bg-blue-800 px-12 py-2 text-xl text-gray-200 hover:bg-blue-500"
+              >
+                Get Started For Free
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div class="bg-footer-clr px-20 py-16 text-gray-100 wp:px-10">
+          <div>
+            <img src="./images/logo.svg" alt="footer-logo" />
+          </div>
+          <div class="mt-6 flex justify-between gap-10 wp:flex-col">
+            <div>
+              <span class="flex gap-5"
+                ><img
+                  src="./images/icon-phone.svg"
+                  alt="phone-svg"
+                  class="h-5 w-5"
+                />Phone: +1-543-123-4567</span
+              >
+              <span class="mt-4 flex gap-5"
+                ><img
+                  src="./images/icon-email.svg"
+                  alt="email-svg"
+                  class="h-5 w-5"
+                />example@fylo.com</span
+              >
+            </div>
+            <div>
+              <ul class="flex flex-col gap-4 text-xl font-light">
+                <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                <li><a href="#" class="hover:text-blue-600">Jobs</a></li>
+                <li><a href="#" class="hover:text-blue-600">Press</a></li>
+                <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="flex flex-col gap-4 text-xl font-light">
+                <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+                <li><a href="#" class="hover:text-blue-600">Terms</a></li>
+                <li><a href="#" class="hover:text-blue-600">Privacy</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="flex gap-5">
+                <li>
+                  <a href="#" class="hover:text-blue-500"
+                    ><ion-icon name="logo-facebook" size="large"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-500"
+                    ><ion-icon name="logo-twitter" size="large"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-orange-500"
+                    ><ion-icon name="logo-instagram" size="large"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
   </body>
 </html>
